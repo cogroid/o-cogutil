@@ -33,6 +33,23 @@ container in which OpenCog will be built and run.
 > Build management tool; v2.8 or higher recommended.
 > http://www.cmake.org/ | cmake
 
+```
+sudo apt -y install libboost-filesystem-dev
+sudo apt -y install libboost-dev
+sudo apt -y install libboost-program-options-dev
+sudo apt -y install libboost-system-dev
+sudo apt -y install libboost-thread-dev
+
+sudo apt-get install build-essential
+wget http://www.cmake.org/files/v3.2/cmake-3.2.2.tar.gz
+tar xf cmake-3.2.2.tar.gz
+cd cmake-3.2.2
+./configure
+make
+
+sudo make install
+```
+
 ###### cxxtest
 > Unit test framework
 > https://cxxtest.com/ | `apt-get install cxxtest`
